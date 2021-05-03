@@ -1,5 +1,5 @@
 const { Client } = require('discord.js')
-const { SHClient } = require('shandler')
+const SHClient = require('shandler')
 
 const client = new Client()
 const options = {
