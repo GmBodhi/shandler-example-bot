@@ -1,3 +1,3 @@
 # shandler-example-bot
 
-Example bot for [Shandler](../../shandler)
+Example bot for [Shandler](../../../shandler)
