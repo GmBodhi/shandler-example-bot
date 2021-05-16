@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "discord.js": "^12.5.3",
-    "shandler": "github:GmBodhi/shandler"
+    "shandler": "^1.1.7"
   },
   "devDependencies": {},
   "scripts": {
