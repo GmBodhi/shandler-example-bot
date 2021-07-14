@@ -64,8 +64,16 @@ client.on('buttonClick', async (button) => {
             ];
             button.reply("Buttons!", { components: cmp, type: 7, });
             break;
-        }
+        };
+        case "2": {
+            if (button.data.values[0] === "hmmm") {
+                button.reply(`🤔`);
+            } else if (button.data.values[0] === "test") {
+                button.reply(`Tests`);
+            };
+        };
     }
 });
+
 
 client.login(process.env.TOKEN);
