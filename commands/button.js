@@ -1,4 +1,5 @@
-const discord = require('discord.js')
+const discord = require('discord.js');
+
 module.exports = {
     guilds: ['789259215868395552'],
     name: 'button',
