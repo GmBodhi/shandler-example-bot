@@ -1,8 +1,10 @@
-const discord = require('discord.js')
+const { MessageEmbed } = require('discord.js');
+
 module.exports = {
     guilds: ['789259215868395552'],
     name: 'buttonembed',
-    async run({ interaction }) {
+    description: 'Reply to the interaction with button(s) on an embed.',
+    async run({ interaction, client }) {
         let cmp = [
             {
                 "type": 1, "components": [
@@ -10,12 +12,11 @@ module.exports = {
                     { "type": 2, "style": 4, "label": "Button 2", "custom_id": "Hello" }
                 ]
             }
-        ]
+        ]; // Creating the buttons.
 
-        let embed = new discord.MessageEmbed()
+        let embed = new MessageEmbed() // Making the Embed.
             .setTitle('Embeds with Buttons')
-            .setDescription("Example Description!")
-        interaction.reply("", { components: cmp, type: 4, embed: embed, }).then(m => {
-        })
+            .setDescription("Example Description!"); 
+        interaction.reply("", { components: cmp, type: 4, embed: embed, }); // Sending the reply.
     }
 }

@@ -1,6 +1,6 @@
 module.exports = {
     name: 'followup',
-    description: 'Follow-up to an interaction',
+    description: 'Reply to the interaction with follow-up messages.',
     guilds: ['789259215868395552'],
     async run({ interaction, client }) {
         let m = await interaction.reply("Bello"); //Send the first message.

@@ -1,10 +1,10 @@
 module.exports = {
     name: 'edit',
-    description: 'Edit an interaction reply',
+    description: 'Reply to the interaction then editing it.',
     guilds: ['789259215868395552'],
     async run({ interaction, client }) {
-        interaction.reply('Ping!').then(m => { //Send the message.
-            m.edit("Pong!"); //edit the message.
-        })
+        interaction.reply('Bello').then(m => { //Send the message.
+            m.edit("Pog"); //edit the message.
+        });
     }
 }
